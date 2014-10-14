@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="143803" started-at="2014-10-14T07:50:44Z" finished-at="2014-10-14T07:53:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="143803" started-at="2014-10-14T07:50:44Z" finished-at="2014-10-14T07:53:08Z">
+      <class name="skyscape.Search_New">
+        <test-method status="PASS" signature="setup()[pri:0, instance:skyscape.Search_New@c5dbb]" name="setup" is-config="true" duration-ms="22485" started-at="2014-10-14T13:20:21Z" finished-at="2014-10-14T13:20:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Login_for_Search()[pri:0, instance:skyscape.Search_New@c5dbb]" name="Login_for_Search" is-config="true" duration-ms="28451" started-at="2014-10-14T13:20:44Z" finished-at="2014-10-14T13:21:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_for_Search -->
+        <test-method status="PASS" signature="Search_with_Keyword(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:skyscape.Search_New@c5dbb]" name="Search_with_Keyword" duration-ms="11366" started-at="2014-10-14T13:21:13Z" data-provider="SearchData" finished-at="2014-10-14T13:21:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Davis]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ALL SKYSCAPE MEDICAL REFERENCES]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Showing 5 products]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Davis's]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_with_Keyword -->
+        <test-method status="PASS" signature="Search_with_Keyword(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:skyscape.Search_New@c5dbb]" name="Search_with_Keyword" duration-ms="9236" started-at="2014-10-14T13:21:24Z" data-provider="SearchData" finished-at="2014-10-14T13:21:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5mcc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ALL SKYSCAPE MEDICAL REFERENCES]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Showing 1 products]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5-Minute Clinical Consult]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_with_Keyword -->
+        <test-method status="PASS" signature="Search_with_Keyword(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:skyscape.Search_New@c5dbb]" name="Search_with_Keyword" duration-ms="11142" started-at="2014-10-14T13:21:33Z" data-provider="SearchData" finished-at="2014-10-14T13:21:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Skyscape]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ALL SKYSCAPE MEDICAL REFERENCES]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Showing 9 products]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Skyscape]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_with_Keyword -->
+        <test-method status="FAIL" signature="Search_with_Keyword(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:skyscape.Search_New@c5dbb]" name="Search_with_Keyword" duration-ms="70577" started-at="2014-10-14T13:21:44Z" data-provider="SearchData" finished-at="2014-10-14T13:22:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fever]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ALL SKYSCAPE MEDICAL REFERENCES]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Showing 0 products]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Fever]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at skyscape.Search_New.Search_with_Keyword(Search_New.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_with_Keyword -->
+        <test-method status="PASS" signature="Logout_After_Search()[pri:0, instance:skyscape.Search_New@c5dbb]" name="Logout_After_Search" is-config="true" duration-ms="12660" started-at="2014-10-14T13:22:55Z" finished-at="2014-10-14T13:23:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout_After_Search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:skyscape.Search_New@c5dbb]" name="tearDown" is-config="true" duration-ms="1844" started-at="2014-10-14T13:23:08Z" finished-at="2014-10-14T13:23:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- skyscape.Search_New -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

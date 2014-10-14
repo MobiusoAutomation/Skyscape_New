@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Skyscape_Web_Testing" configfailurepolicy="continue" parallel="none" allow-return-values="true" verbose="10">
+ 
+   <test name="Launching of skyscape website" sequential = "true" >
+        <classes>
+       <class name="skyscape.Launch"/>
+    </classes>
+    </test>
+      
+     <test name="Login with different user ids" preserve-order="false">
+        <classes>
+       <class name="skyscape.Login"/>
+    </classes>
+    </test>
+    
+     <test name="Registration" sequential = "true" >
+        <classes>
+       <class name="skyscape.Registration"/>
+    </classes>
+    </test>
+    
+         <test name="Header bar links" sequential = "true" >
+        <classes>
+       <class name="skyscape.Header_Bar_Latest"/>
+    </classes>
+    </test>
+       
+     <test name="Launching of product detail screen" sequential = "true" >
+        <classes>
+       <class name="skyscape.ProductDetail"/>
+    </classes>
+    </test>     
+   
+          
+      <test name="Shopping Cart Scenarios" sequential = "true" >
+        <classes>
+       <class name="skyscape.Shopping_cart"/>
+    </classes>
+    </test>   
+        
+      <test name="Search" sequential = "true" >
+        <classes>
+       <class name="skyscape.Search_New"/>
+    </classes>
+    </test>
+    
+     <test name="Purchase resource" sequential = "true" >
+        <classes>
+       <class name="skyscape.Purchase"/>
+    </classes>
+    </test>
+    
+    
+     <test name="Forgot Pasword" sequential = "true" >
+        <classes>
+       <class name="skyscape.ForgotPassword"/>
+    </classes>
+    </test>
+    
+     <test name="Update User Profile" sequential = "true" >
+        <classes>
+       <class name="skyscape.Change_Profile"/>
+    </classes>
+    </test>
+   </suite>

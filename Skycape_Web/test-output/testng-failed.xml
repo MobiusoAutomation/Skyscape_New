@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="skyscape.Search_New">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Logout_After_Search"/>
+          <include name="Login_for_Search"/>
+          <include name="setup"/>
+          <include name="Search_with_Keyword" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- skyscape.Search_New -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
